@@ -44,8 +44,6 @@ class DeliveryTest {
         $("[data-test-id='phone'] [type=tel]").setValue(validPhone);
         $x("//*[contains(@class,'checkbox__text')]").click();
         $x("//*[contains(text(),'Запланировать')]").click();
-        //$("[data-test-id='notification'] [class='notification__content']").should(Condition.visible, Duration.ofSeconds(15));
-        //$("[data-test-id='notification'] [class='notification__content']").shouldHave(Condition.exactText("Встреча успешно забронирована на " + firstMeetingDate));
         $("[data-test-id='date'] [class='input__box'] [placeholder='Дата встречи']").sendKeys(Keys.CONTROL+"a");
         $("[data-test-id='date'] [class='input__box'] [placeholder='Дата встречи']").sendKeys(Keys.BACK_SPACE);
         $("[data-test-id='date'] [class='input__box'] [placeholder='Дата встречи']").setValue(secondMeetingDate);
