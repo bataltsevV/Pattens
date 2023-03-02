@@ -15,7 +15,7 @@ public class DataGenerator {
         return LocalDate.now().plusDays(addDays).format(DateTimeFormatter.ofPattern(dateFormat));
     }
 
-    public static String generateCity(String locale) {
+    public static String generateCity() {
         // TODO: добавить логику для объявления переменной city и задания её значения, генерацию можно выполнить
         // с помощью Faker, либо используя массив валидных городов и класс Random
         String[] cities = new String[]{"Горно-Алтайск", "Петропавловск-Камчатский", "Санкт-Петербург", "Нижний Новгород", "Ростов-на-Дону", "Южно-Сахалинск", "Великий Новгород", "Йошкар-Ола", "Нарьян-Мар", "Ханты-Мансийск", "Салехард"};
@@ -51,7 +51,7 @@ public class DataGenerator {
         public static UserInfoFull generateUserWithCity(String locale) {
             // TODO: добавить логику для создания пользователя user с использованием методов generateCity(locale),
             // generateName(locale), generatePhone(locale), generateCity(locale)
-            return new UserInfoFull(generateCity(locale), generateName(locale), generatePhone(locale));
+            return new UserInfoFull(generateCity(), generateName(locale), generatePhone(locale));
         }
     }
 

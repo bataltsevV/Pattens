@@ -31,7 +31,7 @@ class DeliveryTest {
         var firstMeetingDate = DataGenerator.generateDate(daysToAddForFirstMeeting, dateFormat);
         var daysToAddForSecondMeeting = 7;
         var secondMeetingDate = DataGenerator.generateDate(daysToAddForSecondMeeting, dateFormat);
-        var validCity = DataGenerator.generateCity("ru");
+        var validCity = DataGenerator.generateCity();
         var validPhone = DataGenerator.generatePhone("ru");
         var validName = DataGenerator.generateName("ru");
 
